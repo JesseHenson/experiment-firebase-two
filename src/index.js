@@ -8,6 +8,8 @@ import App from "./components/App";
 import Firebase, { FirebaseContext } from "./components/Firebase";
 
 ReactDOM.render(
+  // this provider means that anytime firebase information changes, 
+  // anthing with a firebase consumer tag will update
   <FirebaseContext.Provider value={new Firebase()}>
     <App />
   </FirebaseContext.Provider>,

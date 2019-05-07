@@ -7,8 +7,8 @@ import * as ROUTES from '../../constants/routes';
 
 const onClick = (history,firebase) => {
     firebase.doSignOut()
-    history.push(ROUTES.HOME)
-    document.location.reload(true)
+    // history.push(ROUTES.HOME)
+    // document.location.reload(true)
 }
 
 const SignOutButtonBase = ({firebase, history}) => {
